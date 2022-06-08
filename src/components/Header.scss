@@ -1,0 +1,37 @@
+@import url("../Imports.scss");
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .logo-area {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 60px;
+            padding: 0 12px 0 20px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+
+    .navbar {
+        a {
+            font-size: 1.3em;
+        }
+
+        a:not(:last-of-type) {
+            margin-right: 25px;
+        }
+    }
+}
