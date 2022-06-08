@@ -2,8 +2,12 @@ import "./Header.scss";
 
 import Logo from "../assets/Logo.png";
 import MenuIcon from "../assets/Menu.png";
+import { useState } from "react";
 
 const Header = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div id="header">
       <a href="/" className="logo-area">
@@ -18,16 +22,17 @@ const Header = () => {
         <a href="/">Contact</a>
       </div>
       <div className="navbar-mobile">
-        <img src={MenuIcon} alt="Menu Icon" className="navbar-mobile-icon" />
-        <div className="navbar-mobile-container">
-          <div className="navbar-mobile-items">
-            <a href="/">Home</a>
-            <a href="/">Projects</a>
-            <a href="/">Skills</a>
-            <a href="/">Publications</a>
-            <a href="/">Contact</a>
-          </div>
-        </div>
+        <img src={MenuIcon} alt="Menu Icon" className="navbar-mobile-icon" onClick={() => setIsMenuOpen(!isMenuOpen)} />
+        {isMenuOpen ?
+          <div className="navbar-mobile-container">
+            <div className="navbar-mobile-items">
+              <a href="/">Home</a>
+              <a href="/">Projects</a>
+              <a href="/">Skills</a>
+              <a href="/">Publications</a>
+              <a href="/">Contact</a>
+            </div>
+          </div> : null}
       </div>
     </div>
   );
