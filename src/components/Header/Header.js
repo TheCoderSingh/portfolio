@@ -1,7 +1,7 @@
 import "./Header.scss";
 
-import Logo from "../assets/Logo.png";
-import MenuIcon from "../assets/Menu.png";
+import Logo from "../../assets/Logo.png";
+import MenuIcon from "../../assets/Menu.png";
 import { useState } from "react";
 
 const Header = () => {
