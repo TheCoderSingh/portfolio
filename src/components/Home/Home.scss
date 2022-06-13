@@ -344,3 +344,32 @@
         }
     }
 }
+
+@media only screen and (max-height: 860px) {
+    #home {
+        .info {
+            img {
+                width: 95%;
+            }
+
+            .info-text {
+                top: 90px;
+                left: 180px;
+            }
+
+            h2 {
+                font-size: 3em;
+            }
+
+            h1 {
+                font-size: 4em;
+            }
+        }
+
+        .main-img {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
