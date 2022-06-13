@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    margin-top: 60px;
+    margin-top: 40px;
 
     .info {
         position: relative;
@@ -40,6 +40,20 @@
 
     .main-img {
         margin-right: 170px;
+    }
+}
+
+.contact-btn {
+    text-align: center;
+    margin-top: 10px;
+
+    button {
+        background: none;
+        border: 1px solid;
+        padding: 8px 15px;
+        cursor: pointer;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.2em;
     }
 }
 
