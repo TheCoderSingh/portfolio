@@ -1,375 +1,374 @@
 @import "../../Imports.scss";
 
 #home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  margin-top: 40px;
 
-    .info {
-        position: relative;
+  .info {
+    position: relative;
 
-        img {
-            width: 110%;
-            margin-left: -140px;
-        }
-
-        .info-text {
-            position: absolute;
-            top: 80px;
-            left: 210px;
-            width: 100%;
-        }
-
-        h2 {
-            font-size: 3.5em;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 5em;
-            margin: 0;
-            color: $secondary;
-
-            span {
-                color: #000;
-            }
-        }
+    img {
+      width: 110%;
+      margin-left: -140px;
     }
 
-    .main-img {
-        margin-right: 170px;
+    .info-text {
+      position: absolute;
+      top: 80px;
+      left: 210px;
+      width: 100%;
     }
+
+    h2 {
+      font-size: 3.5em;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 5em;
+      margin: 0;
+      color: $secondary;
+
+      span {
+        color: #000;
+      }
+    }
+  }
+
+  .main-img {
+    margin-right: 170px;
+  }
 }
 
 .contact-btn {
-    text-align: center;
-    margin-top: 10px;
+  text-align: center;
+  margin-top: 10px;
 
-    button {
-        background: none;
-        border: 1px solid;
-        padding: 8px 15px;
-        cursor: pointer;
-        font-family: "Raleway", sans-serif;
-        font-size: 1.2em;
-    }
+  button {
+    background: none;
+    border: 1px solid;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+  }
 }
 
 @media only screen and (max-width: 1650px) {
-    #home {
-        .info {
-            .info-text {
-                top: 90px;
-                left: 180px;
-            }
+  #home {
+    .info {
+      .info-text {
+        top: 90px;
+        left: 180px;
+      }
 
-            h2 {
-                font-size: 3em;
-            }
+      h2 {
+        font-size: 3em;
+      }
 
-            h1 {
-                font-size: 4.8em;
-            }
-        }
-
-        .main-img {
-            margin-right: 120px;
-        }
+      h1 {
+        font-size: 4.8em;
+      }
     }
+
+    .main-img {
+      margin-right: 120px;
+    }
+  }
 }
 
 @media only screen and (max-width: 1500px) {
-    #home {
-        .info {
-            img {
-                width: 100%;
-            }
+  #home {
+    .info {
+      img {
+        width: 100%;
+      }
 
-            h2 {
-                font-size: 2.8em;
-            }
+      h2 {
+        font-size: 2.8em;
+      }
 
-            h1 {
-                font-size: 4.5em;
-            }
-        }
-
-        .main-img {
-            margin-right: 50px;
-
-            img {
-                width: 90%;
-            }
-        }
+      h1 {
+        font-size: 4.5em;
+      }
     }
+
+    .main-img {
+      margin-right: 50px;
+
+      img {
+        width: 90%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-    #home {
-        .info {
-            img {
-                width: 95%;
-            }
+  #home {
+    .info {
+      img {
+        width: 95%;
+      }
 
-            .info-text {
-                left: 120px;
-            }
+      .info-text {
+        left: 120px;
+      }
 
-            h1 {
-                font-size: 4.2em;
-            }
-        }
-
-        .main-img {
-            margin-right: 30px;
-        }
+      h1 {
+        font-size: 4.2em;
+      }
     }
+
+    .main-img {
+      margin-right: 30px;
+    }
+  }
 }
 
-
 @media only screen and (max-width: 1350px) {
-    #home {
-        .info {
-            .info-text {
-                top: 70px;
-            }
-        }
+  #home {
+    .info {
+      .info-text {
+        top: 70px;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 1260px) {
-    #home {
-        .info {
-            .info-text {
-                left: 100px;
-            }
+  #home {
+    .info {
+      .info-text {
+        left: 100px;
+      }
 
-            h2 {
-                font-size: 2.6em;
-            }
+      h2 {
+        font-size: 2.6em;
+      }
 
-            h1 {
-                font-size: 4em;
-            }
-        }
-
-        .main-img {
-            margin-right: 0px;
-
-            img {
-                width: 80%;
-            }
-        }
+      h1 {
+        font-size: 4em;
+      }
     }
+
+    .main-img {
+      margin-right: 0px;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    #home {
-        .info {
-            img {
-                width: 90%;
-            }
+  #home {
+    .info {
+      img {
+        width: 90%;
+      }
 
-            .info-text {
-                left: 70px;
-                top: 50px;
-            }
+      .info-text {
+        left: 70px;
+        top: 50px;
+      }
 
-            h2 {
-                font-size: 2.3em;
-            }
+      h2 {
+        font-size: 2.3em;
+      }
 
-            h1 {
-                font-size: 3.7em;
-            }
-        }
+      h1 {
+        font-size: 3.7em;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    #home {
-        .info {
-            .info-text {
-                left: 70px;
-                top: 50px;
-            }
+  #home {
+    .info {
+      .info-text {
+        left: 70px;
+        top: 50px;
+      }
 
-            h2 {
-                font-size: 2.1em;
-            }
+      h2 {
+        font-size: 2.1em;
+      }
 
-            h1 {
-                font-size: 3.4em;
-            }
-        }
+      h1 {
+        font-size: 3.4em;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 1040px) {
-    #home {
-        .info {
-            img {
-                width: 85%;
-            }
+  #home {
+    .info {
+      img {
+        width: 85%;
+      }
 
-            .info-text {
-                left: 50px;
-            }
+      .info-text {
+        left: 50px;
+      }
 
-            h1 {
-                font-size: 3em;
-            }
-        }
+      h1 {
+        font-size: 3em;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    #home {
-        .info {
-            .info-text {
-                left: 30px;
-                top: 35px;
-            }
-        }
+  #home {
+    .info {
+      .info-text {
+        left: 30px;
+        top: 35px;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 945px) {
-    #home {
-        flex-direction: column;
-        text-align: center;
-        margin-top: 20px;
+  #home {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
 
-        .info {
-            position: static;
+    .info {
+      position: static;
 
-            img {
-                display: none;
-            }
+      img {
+        display: none;
+      }
 
-            .info-text {
-                position: static;
-            }
+      .info-text {
+        position: static;
+      }
 
-            h2 {
-                font-size: 1.8em;
-            }
+      h2 {
+        font-size: 1.8em;
+      }
 
-            h1 {
-                font-size: 2.5em;
-                color: #000;
+      h1 {
+        font-size: 2.5em;
+        color: #000;
 
-                span {
-                    color: $primary;
-                }
-            }
+        span {
+          color: $primary;
         }
-
-        .main-img {
-            margin-top: 30px;
-
-            img {
-                width: 55%;
-            }
-        }
+      }
     }
+
+    .main-img {
+      margin-top: 30px;
+
+      img {
+        width: 55%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 620px) {
-    #home {
-        .main-img {
-            margin-top: 60px;
+  #home {
+    .main-img {
+      margin-top: 60px;
 
-            img {
-                width: 55%;
-            }
-        }
+      img {
+        width: 55%;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    #home {
-        .main-img {
-            margin-top: 80px;
+  #home {
+    .main-img {
+      margin-top: 80px;
 
-            img {
-                width: 65%;
-            }
-        }
+      img {
+        width: 65%;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    #home {
-        .info {
-            h2 {
-                font-size: 1.4em;
-            }
+  #home {
+    .info {
+      h2 {
+        font-size: 1.4em;
+      }
 
-            h1 {
-                font-size: 2.4em;
-            }
-        }
-
-        .main-img {
-            margin-top: 80px;
-
-            img {
-                width: 70%;
-            }
-        }
+      h1 {
+        font-size: 2.4em;
+      }
     }
+
+    .main-img {
+      margin-top: 80px;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 300px) {
-    #home {
-        .info {
-            h2 {
-                font-size: 1.4em;
-            }
+  #home {
+    .info {
+      h2 {
+        font-size: 1.4em;
+      }
 
-            h1 {
-                font-size: 2.2em;
-            }
-        }
-
-        .main-img {
-            margin-top: 80px;
-
-            img {
-                width: 80%;
-            }
-        }
+      h1 {
+        font-size: 2.2em;
+      }
     }
+
+    .main-img {
+      margin-top: 80px;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-height: 860px) {
-    #home {
-        .info {
-            img {
-                width: 95%;
-            }
+  #home {
+    .info {
+      img {
+        width: 95%;
+      }
 
-            .info-text {
-                top: 90px;
-                left: 180px;
-            }
+      .info-text {
+        top: 90px;
+        left: 180px;
+      }
 
-            h2 {
-                font-size: 3em;
-            }
+      h2 {
+        font-size: 3em;
+      }
 
-            h1 {
-                font-size: 4em;
-            }
-        }
-
-        .main-img {
-            img {
-                width: 80%;
-            }
-        }
+      h1 {
+        font-size: 4em;
+      }
     }
+
+    .main-img {
+      img {
+        width: 80%;
+      }
+    }
+  }
 }

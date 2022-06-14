@@ -5,7 +5,6 @@ import MenuIcon from "../../assets/Menu.png";
 import { useState } from "react";
 
 const Header = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -22,8 +21,13 @@ const Header = () => {
         <a href="/">Contact</a>
       </div>
       <div className="navbar-mobile">
-        <img src={MenuIcon} alt="Menu Icon" className="navbar-mobile-icon" onClick={() => setIsMenuOpen(!isMenuOpen)} />
-        {isMenuOpen ?
+        <img
+          src={MenuIcon}
+          alt="Menu Icon"
+          className="navbar-mobile-icon"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        />
+        {isMenuOpen ? (
           <div className="navbar-mobile-container">
             <div className="navbar-mobile-items">
               <a href="/">Home</a>
@@ -32,7 +36,8 @@ const Header = () => {
               <a href="/">Publications</a>
               <a href="/">Contact</a>
             </div>
-          </div> : null}
+          </div>
+        ) : null}
       </div>
     </div>
   );
