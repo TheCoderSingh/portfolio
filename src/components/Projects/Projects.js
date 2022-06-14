@@ -3,7 +3,12 @@ import { useState } from "react";
 import "./Projects.scss";
 
 import Head from "../../assets/Head.png";
-import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
+import {
+  AiFillLeftCircle,
+  AiFillRightCircle,
+  AiFillGithub,
+  AiFillEye,
+} from "react-icons/ai";
 
 const Projects = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -16,8 +21,6 @@ const Projects = ({ slides }) => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-
-  console.log(current);
 
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
@@ -48,36 +51,71 @@ const Projects = ({ slides }) => {
               >
                 {index === current && (
                   <div className="slider-images">
-                    <img
-                      src={slide.image}
-                      alt="image"
-                      key={index}
-                      className="slider-image"
-                    />
+                    <div className="project">
+                      <img
+                        src={slide?.image}
+                        alt="image"
+                        key={index}
+                        className="slider-image"
+                      />
+                      <h1>{slide?.title}</h1>
+                      <a href={slide.github} target="_blank"><AiFillGithub className="project-icon" /></a>
+                      <a href={slide.live} target="_blank"><AiFillEye className="project-icon" /></a>
+                      <p>{slide?.description}</p>
+                      <div className="technologies">
+                        {slide?.technologies?.map((technology, index) => {
+                          return <div key={index} className="technology">{technology}</div>;
+                        })}
+                      </div>
+                    </div>
 
                     {current + 1 === slides.length ? (
-                      <img
-                        src={slides[index - 1].image}
-                        alt="image"
-                        key={index - 1}
-                        className="slider-image slider-image-second"
-                      />
+                      <div className="project project-2">
+                        <img
+                          src={slides[index - 1]?.image}
+                          alt="image"
+                          key={index - 1}
+                          className="slider-image"
+                        />
+                        <h1>{slides[index - 1]?.title}</h1>
+                        <a href={slides[index - 1].github} target="_blank"><AiFillGithub className="project-icon" /></a>
+                        <a href={slides[index - 1].live} target="_blank"><AiFillEye className="project-icon" /></a>
+                        <p>{slides[index - 1]?.description}</p>
+                        <div className="technologies">
+                          {slides[index - 1]?.technologies?.map((technology, index) => {
+                            return <div key={index} className="technology">{technology}</div>;
+                          })}
+                        </div>
+                      </div>
                     ) : (
-                      <img
-                        src={slides[index + 1].image}
-                        alt="image"
-                        key={index + 1}
-                        className="slider-image slider-image-second"
-                      />
+                      <div className="project project-2">
+                        <img
+                          src={slides[index + 1]?.image}
+                          alt="image"
+                          key={index + 1}
+                          className="slider-image"
+                        />
+                        <h1>{slides[index + 1]?.title}</h1>
+                        <a href={slides[index + 1].github} target="_blank"><AiFillGithub className="project-icon" /></a>
+                        <a href={slides[index + 1].live} target="_blank"><AiFillEye className="project-icon" /></a>
+                        <p>{slides[index + 1]?.description}</p>
+                        <div className="technologies">
+                          {slides[index - 1]?.technologies?.map((technology, index) => {
+                            return <div key={index} className="technology">{technology}</div>;
+                          })}
+                        </div>
+                      </div>
                     )}
+
                   </div>
-                )}
+                )
+                }
               </div>
             );
           })}
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
