@@ -3,14 +3,14 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 
 import "./App.scss";
-import { SliderData } from "./components/Projects/SliderData";
+import { ProjectsData } from "./components/Projects/ProjectsData";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Home />
-      <Projects slides={SliderData} />
+      <Projects slides={ProjectsData} />
     </div>
   );
 }

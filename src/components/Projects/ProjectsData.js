@@ -1,7 +1,7 @@
 import Aura from "../../assets/Aura.png";
 import Alunos from "../../assets/Alunos.png";
 
-export const SliderData = [
+export const ProjectsData = [
   {
     image: Aura,
   },
