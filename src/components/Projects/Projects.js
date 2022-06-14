@@ -100,7 +100,7 @@ const Projects = ({ slides }) => {
                         <a href={slides[index + 1].live} target="_blank"><AiFillEye className="project-icon" /></a>
                         <p>{slides[index + 1]?.description}</p>
                         <div className="technologies">
-                          {slides[index - 1]?.technologies?.map((technology, index) => {
+                          {slides[index + 1]?.technologies?.map((technology, index) => {
                             return <div key={index} className="technology">{technology}</div>;
                           })}
                         </div>
