@@ -1,0 +1,15 @@
+@import "../../Imports.scss";
+
+#footer {
+    font-family: "Raleway", sans-serif;
+    background: $primary;
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 0.8em;
+
+    a {
+        color: #fff;
+    }
+}
