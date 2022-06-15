@@ -20,26 +20,26 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="contact-left-bottom">
-                        <div className="contact-btn">
+                        <a href="https://linkedin.com/in/TheCoderSingh" target="_blank" className="contact-btn">
                             <AiFillLinkedin className="contact-icon" />
                             <span>@TheCoderSingh</span>
-                        </div>
-                        <div className="contact-btn">
+                        </a>
+                        <a href="https://twitter.com/TheCoderSingh" target="_blank" className="contact-btn">
                             <AiFillTwitterSquare className="contact-icon" />
                             <span>@TheCoderSingh</span>
-                        </div>
-                        <div className="contact-btn">
+                        </a>
+                        <a href="https://instagram.com/CoderSingh" target="_blank" className="contact-btn">
                             <AiFillInstagram className="contact-icon" />
                             <span>@CoderSingh</span>
-                        </div>
-                        <div className="contact-btn">
+                        </a>
+                        <a href="https://github.com/TheCoderSingh" target="_blank" className="contact-btn">
                             <AiFillGithub className="contact-icon" />
-                            <span>@CoderSingh</span>
-                        </div>
-                        <div className="contact-btn">
+                            <span>@TheCoderSingh</span>
+                        </a>
+                        <a href="mailto:thecodersingh@gmail.com" target="_blank" className="contact-btn">
                             <FaEnvelope className="contact-icon" />
                             <span>thecodersingh@gmail.com</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div className="contact-right">
