@@ -1,5 +1,7 @@
 import Aura from "../../assets/Aura.png";
 import Alunos from "../../assets/Alunos.png";
+import Hotels from "../../assets/Hotels.png";
+import RealEstate from "../../assets/RealEstate.png";
 
 export const ProjectsData = [
   {
@@ -21,12 +23,21 @@ export const ProjectsData = [
     technologies: ["HTML", "CSS", "Vue.js", "Laravel", "Quasar", "GraphQL"],
   },
   {
-    image: Aura,
-    title: "Aura",
-    github: "/",
-    live: "/",
+    image: Hotels,
+    title: "Hotels",
+    github: "https://github.com/TheCoderSingh/hotels",
+    live: "https://hotels-tau.vercel.app/",
     description:
-      "Alunos improves homestay experiences by helping companies in Canada to manage homestay-related activities and faciliting communication.",
-    technologies: ["HTML", "CSS", "Vue.js", "Laravel", "Quasar", "GraphQL"],
+      "Search rooms, prices and more from many hotels around the world!",
+    technologies: ["HTML", "CSS", "React", "Next.js"],
+  },
+  {
+    image: RealEstate,
+    title: "Real Estate",
+    github: "https://github.com/TheCoderSingh/real-estate",
+    live: "https://real-estate-tawny.vercel.app/",
+    description:
+      "Explore Apartments, Villas, Homes and more",
+    technologies: ["HTML", "CSS", "React", "Next.js"],
   },
 ];
