@@ -43,11 +43,11 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contact-right">
-                    <form>
-                        <input placeholder="Name" />
-                        <input placeholder="Email" type="email" />
-                        <textarea placeholder="Message"></textarea>
-                        <button>SUBMIT</button>
+                    <form action="https://formsubmit.co/thecodersingh@gmail.com" method="POST">
+                        <input placeholder="Name" name="name" />
+                        <input placeholder="Email" type="email" name="email" />
+                        <textarea placeholder="Message" name="message"></textarea>
+                        <button type="submit">SUBMIT</button>
                     </form>
                 </div>
             </div>
