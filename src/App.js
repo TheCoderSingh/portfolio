@@ -4,6 +4,7 @@ import Projects from "./components/Projects/Projects";
 
 import "./App.scss";
 import { ProjectsData } from "./components/Projects/ProjectsData";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Home />
       <Projects slides={ProjectsData} />
+      <Skills />
     </div>
   );
 }
