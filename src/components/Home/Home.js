@@ -28,7 +28,7 @@ const Home = () => {
         </div>
       </div>
       <div className="contact-btn">
-        <button>Get in touch</button>
+        <a href="#contact">Get in touch</a>
       </div>
     </div>
   );

@@ -47,13 +47,15 @@
   text-align: center;
   margin-top: 10px;
 
-  button {
+  a {
     background: none;
     border: 1px solid;
     padding: 8px 15px;
     cursor: pointer;
     font-family: "Raleway", sans-serif;
     font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
   }
 }
 

@@ -15,10 +15,10 @@ const Header = () => {
       </a>
       <div className="navbar">
         <a href="/">Home</a>
-        <a href="/">Projects</a>
-        <a href="/">Skills</a>
-        <a href="/">Publications</a>
-        <a href="/">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
       </div>
       <div className="navbar-mobile">
         <img
