@@ -1,0 +1,82 @@
+@import "../../Imports.scss";
+
+#publications {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+
+    .heading {
+        text-align: center;
+        padding-top: 10px;
+
+        h1 {
+            font-size: 4em;
+            font-weight: lighter;
+            margin-bottom: 0;
+        }
+    }
+
+    .publications {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin: 40px auto;
+        text-align: left;
+
+        .publication {
+            max-width: 25%;
+            padding: 20px;
+
+            a {
+                text-decoration: none;
+                font-size: 1.2em;
+                color: $primary;
+            }
+
+            p {
+                font-size: 0.8em;
+                line-height: 20px;
+            }
+
+            img {
+                height: 18px;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    #publications .publications {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #publications .publications {
+        width: 100%;
+
+        .publication {
+            max-width: 30%;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #publications {
+
+        .heading h1 {
+            font-size: 2em;
+        }
+
+        .publications {
+            flex-direction: column;
+            align-items: center;
+
+            .publication {
+                max-width: 80%;
+            }
+        }
+    }
+}
