@@ -40,7 +40,7 @@
 
             .contact-left-bottom {
                 .contact-btn {
-                    background: $dark;
+                    background: $primary;
                     width: 190px;
                     height: 20px;
                     margin: 10px auto 10px auto;
@@ -49,6 +49,7 @@
                     align-items: center;
                     text-align: left;
                     display: block;
+                    text-decoration: none;
 
                     span {
                         font-size: 0.8em;
@@ -56,7 +57,7 @@
                     }
 
                     .contact-icon {
-                        color: $primary;
+                        color: #fff;
                         margin-right: 10px;
                         font-size: 1.3em;
                         vertical-align: middle;
@@ -115,6 +116,10 @@
 
             .contact-left-top {
                 margin-top: 20px;
+            }
+
+            .contact-left-bottom .contact-btn {
+                width: 100%;
             }
         }
 

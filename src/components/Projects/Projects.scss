@@ -168,6 +168,15 @@
 
             .project {
               width: 620px;
+              margin-bottom: 30px;
+
+              p {
+                text-align: center;
+              }
+
+              .technologies {
+                justify-content: center;
+              }
             }
 
             .slider-image {
@@ -202,14 +211,14 @@
               width: 100%;
             }
           }
+        }
+      }
 
-          .top-arrows {
+      .top-arrows {
 
-            .right-arrow,
-            .left-arrow {
-              font-size: 2.5em;
-            }
-          }
+        .right-arrow,
+        .left-arrow {
+          font-size: 2.5em;
         }
       }
     }
