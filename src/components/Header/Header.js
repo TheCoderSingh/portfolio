@@ -14,7 +14,7 @@ const Header = () => {
         <h1>Jaskaran Singh</h1>
       </a>
       <div className="navbar">
-        <a href="/">Home</a>
+        <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#publications">Publications</a>
@@ -30,11 +30,11 @@ const Header = () => {
         {isMenuOpen ? (
           <div className="navbar-mobile-container">
             <div className="navbar-mobile-items">
-              <a href="/">Home</a>
-              <a href="/">Projects</a>
-              <a href="/">Skills</a>
-              <a href="/">Publications</a>
-              <a href="/">Contact</a>
+              <a href="#home">Home</a>
+              <a href="#projects">Projects</a>
+              <a href="#skills">Skills</a>
+              <a href="#publications">Publications</a>
+              <a href="#contact">Contact</a>
             </div>
           </div>
         ) : null}
