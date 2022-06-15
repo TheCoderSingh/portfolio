@@ -1,0 +1,214 @@
+@import "../../Imports.scss";
+
+#contact {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+
+    .heading {
+        text-align: center;
+        padding-top: 10px;
+
+        h1 {
+            font-size: 4em;
+            font-weight: lighter;
+            margin-bottom: 0;
+        }
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        align-items: center;
+
+        .contact-left {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 25%;
+            margin: 0px 80px 0 0;
+
+            .contact-left-top {
+                img {
+                    height: 100px;
+                }
+
+                p {
+                    color: #B1B1B1;
+                }
+            }
+
+            .contact-left-bottom {
+                .contact-btn {
+                    background: $dark;
+                    width: 190px;
+                    height: 20px;
+                    margin: 10px auto 10px auto;
+                    padding: 10px;
+                    border-radius: 3px;
+                    align-items: center;
+                    text-align: left;
+
+                    span {
+                        font-size: 0.8em;
+                        color: #fff;
+                    }
+
+                    .contact-icon {
+                        color: $primary;
+                        margin-right: 10px;
+                        font-size: 1.3em;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        .contact-right {
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    background: $pink;
+                    border: none;
+                    margin-bottom: 20px;
+                    width: 500px;
+                    height: 30px;
+                    border-radius: 3px;
+                    padding: 5px 10px;
+                }
+
+                textarea {
+                    background: $pink;
+                    border: none;
+                    border-radius: 3px;
+                    padding: 5px 10px;
+                    height: 300px;
+                    margin-bottom: 30px;
+                    resize: none;
+                }
+
+                button {
+                    width: 130px;
+                    border: none;
+                    padding: 10px;
+                    background: $dark;
+                    color: #fff;
+                    border-radius: 3px;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #contact .contact {
+        flex-direction: column;
+
+        .contact-left {
+            flex-direction: column-reverse;
+            margin: 0px auto;
+            width: 500px;
+
+            .contact-left-top {
+                margin-top: 20px;
+            }
+        }
+
+        .contact-right {
+            form {
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #contact .contact {
+        .contact-left {
+            width: 400px;
+        }
+
+        .contact-right form input {
+            width: 400px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #contact .contact {
+        .contact-left {
+            width: 300px;
+        }
+
+        .contact-right form input {
+            width: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #contact .contact {
+        .contact-left {
+            width: 250px;
+
+            .contact-left-top {
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 1.2em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        .contact-right {
+            .contact-right form {
+                input {
+                    width: 250px;
+                }
+
+                textarea {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #contact .contact {
+        .contact-left {
+            width: 250px;
+
+            .contact-left-top {
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 1.2em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        .contact-right form {
+            input {
+                width: 200px;
+            }
+
+            textarea {
+                height: 200px;
+            }
+        }
+    }
+}

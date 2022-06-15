@@ -8,6 +8,7 @@ import { ProjectsData } from "./components/Projects/ProjectsData";
 import { PublicationsData } from "./components/Publications/PublicationsData";
 
 import "./App.scss";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Projects slides={ProjectsData} />
       <Skills />
       <Publications publications={PublicationsData} />
+      <Contact />
     </div>
   );
 }
