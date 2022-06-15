@@ -1,7 +1,7 @@
 import "./Home.scss";
 
 import Diamond from "../../assets/Diamond.png";
-import Jas from "../../assets/Jas.png";
+import Jas from "../../assets/Image.png";
 
 const Home = () => {
   return (

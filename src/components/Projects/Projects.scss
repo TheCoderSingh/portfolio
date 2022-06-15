@@ -98,7 +98,7 @@
         .slider-image {
           width: 600px;
           max-height: 350px;
-          border-radius: 18px;
+          border-radius: 8px;
           margin: 0 10px;
           box-shadow: 5px 5px 10px rgba(#C78282, 0.1);
         }
@@ -208,19 +208,21 @@
             }
 
             .slider-image {
-              width: 100%;
+              width: 90%;
             }
+          }
+        }
+
+        .top-arrows {
+
+          .right-arrow,
+          .left-arrow {
+            font-size: 2.5em;
           }
         }
       }
 
-      .top-arrows {
 
-        .right-arrow,
-        .left-arrow {
-          font-size: 2.5em;
-        }
-      }
     }
   }
 }
