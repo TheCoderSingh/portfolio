@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.3e0bf9c2.css",
-    "main.js": "/static/js/main.86031d2e.js",
+    "main.js": "/static/js/main.0872e892.js",
     "static/media/Aquashot.png": "/static/media/Aquashot.3925c141289ac5f21ddd.png",
     "static/media/RealEstate.png": "/static/media/RealEstate.a46652f1e49674a9da5e.png",
     "static/media/Hotels.png": "/static/media/Hotels.c093dab0ef2cf7ba308a.png",
     "static/media/Alunos.png": "/static/media/Alunos.6e9e737ab0385e9de2eb.png",
     "static/media/Image.png": "/static/media/Image.956900ab9d2f60414075.png",
+    "static/media/Ecommerce.png": "/static/media/Ecommerce.13c207f94923a5b830d5.png",
     "static/media/React.png": "/static/media/React.f153eb9f28437192c6a0.png",
     "static/media/Crypto.png": "/static/media/Crypto.4c4d3920a08d8a491093.png",
     "static/media/Aura.png": "/static/media/Aura.d686e5dfd9b3d975c096.png",
@@ -19,10 +20,10 @@
     "static/media/Nodejs.svg": "/static/media/Nodejs.dd47e26ed1d7dddf018e5cbffc40f76d.svg",
     "index.html": "/index.html",
     "main.3e0bf9c2.css.map": "/static/css/main.3e0bf9c2.css.map",
-    "main.86031d2e.js.map": "/static/js/main.86031d2e.js.map"
+    "main.0872e892.js.map": "/static/js/main.0872e892.js.map"
   },
   "entrypoints": [
     "static/css/main.3e0bf9c2.css",
-    "static/js/main.86031d2e.js"
+    "static/js/main.0872e892.js"
   ]
 }
