@@ -4,6 +4,7 @@ import Hotels from "../../assets/Hotels.png";
 import RealEstate from "../../assets/RealEstate.png";
 import Aquashot from "../../assets/Aquashot.png";
 import Crypto from "../../assets/Crypto.png";
+import Ecommerce from "../../assets/Ecommerce.png";
 
 export const ProjectsData = [
   {
@@ -59,5 +60,14 @@ export const ProjectsData = [
     description:
       "View & filter cryptocurrencies. Shows symbols, price change, market cap and more...",
     technologies: ["HTML", "CSS", "ReactJS", "MySQL"],
+  },
+  {
+    image: Ecommerce,
+    title: "Ecommerce",
+    github: "https://github.com/TheCoderSingh/ecommerce",
+    live: "https://ecommerce.thecodersingh.com/",
+    description:
+      "One place to buy headphones, speakers and more built using Sanity including payment integration with Stripe.",
+    technologies: ["HTML", "CSS", "ReactJS", "Next.js", "Stripe", "Sanity"],
   },
 ];
