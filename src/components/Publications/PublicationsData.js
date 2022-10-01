@@ -3,7 +3,7 @@ export const PublicationsData = [
     title: "Elucidating arrow functions",
     link: "https://medium.com/netscrew-technologies/elucidating-arrow-functions-in-javascript-236d91bcbf5d",
     description:
-      "Arrow Functions were introduced in ECMAScript 6 (ES2015). They are often referred to as “Fat Arrow Functions” or &lquo;Lambda Functions&rquo;…",
+      "Arrow Functions were introduced in ECMAScript 6 (ES2015). They are often referred to as “Fat Arrow Functions” or 'Lambda Functions'…",
   },
   {
     title: "3 Women Who Made The Tech Community Proud",
@@ -16,5 +16,5 @@ export const PublicationsData = [
     link: "https://medium.com/netscrew-technologies/var-let-const-an-overview-and-comparison-3f1220b21774",
     description:
       "ECMAScript 6 (also known as ES6 or ECMAScript 2015) was finalized in June 2015 and it came out with a whole bunch of new features like..",
-  }
+  },
 ];
