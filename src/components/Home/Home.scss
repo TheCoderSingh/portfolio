@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   font-family: "Raleway", sans-serif;
-  margin-top: 40px;
+  margin-top: 30px;
 
   .info {
     position: relative;
@@ -82,11 +82,16 @@
   }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1504px) {
   #home {
     .info {
       img {
-        width: 100%;
+        width: 90%;
+      }
+
+      .info-text {
+        left: 126px;
+        top: 50px;
       }
 
       h2 {
@@ -102,7 +107,7 @@
       margin-right: 50px;
 
       img {
-        width: 90%;
+        width: 80%;
       }
     }
   }
@@ -246,7 +251,7 @@
     .info {
       position: static;
 
-      >img {
+      > img {
         display: none;
       }
 

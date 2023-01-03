@@ -54,17 +54,25 @@ const Projects = ({ slides }) => {
                     <div className="project">
                       <img
                         src={slide?.image}
-                        alt="image"
+                        alt="Project"
                         key={index}
                         className="slider-image"
                       />
                       <h1>{slide?.title}</h1>
-                      <a href={slide.github} target="_blank"><AiFillGithub className="project-icon" /></a>
-                      <a href={slide.live} target="_blank"><AiFillEye className="project-icon" /></a>
+                      <a href={slide.github} target="_blank" rel="noreferrer">
+                        <AiFillGithub className="project-icon" />
+                      </a>
+                      <a href={slide.live} target="_blank" rel="noreferrer">
+                        <AiFillEye className="project-icon" />
+                      </a>
                       <p>{slide?.description}</p>
                       <div className="technologies">
                         {slide?.technologies?.map((technology, index) => {
-                          return <div key={index} className="technology">{technology}</div>;
+                          return (
+                            <div key={index} className="technology">
+                              {technology}
+                            </div>
+                          );
                         })}
                       </div>
                     </div>
@@ -73,49 +81,83 @@ const Projects = ({ slides }) => {
                       <div className="project project-2">
                         <img
                           src={slides[index - 1]?.image}
-                          alt="image"
+                          alt="Project"
                           key={index - 1}
                           className="slider-image"
                         />
                         <h1>{slides[index - 1]?.title}</h1>
-                        <a href={slides[index - 1].github} target="_blank"><AiFillGithub className="project-icon" /></a>
-                        <a href={slides[index - 1].live} target="_blank"><AiFillEye className="project-icon" /></a>
+                        <a
+                          href={slides[index - 1].github}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <AiFillGithub className="project-icon" />
+                        </a>
+                        <a
+                          href={slides[index - 1].live}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <AiFillEye className="project-icon" />
+                        </a>
                         <p>{slides[index - 1]?.description}</p>
                         <div className="technologies">
-                          {slides[index - 1]?.technologies?.map((technology, index) => {
-                            return <div key={index} className="technology">{technology}</div>;
-                          })}
+                          {slides[index - 1]?.technologies?.map(
+                            (technology, index) => {
+                              return (
+                                <div key={index} className="technology">
+                                  {technology}
+                                </div>
+                              );
+                            }
+                          )}
                         </div>
                       </div>
                     ) : (
                       <div className="project project-2">
                         <img
                           src={slides[index + 1]?.image}
-                          alt="image"
+                          alt="Project"
                           key={index + 1}
                           className="slider-image"
                         />
                         <h1>{slides[index + 1]?.title}</h1>
-                        <a href={slides[index + 1].github} target="_blank"><AiFillGithub className="project-icon" /></a>
-                        <a href={slides[index + 1].live} target="_blank"><AiFillEye className="project-icon" /></a>
+                        <a
+                          href={slides[index + 1].github}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <AiFillGithub className="project-icon" />
+                        </a>
+                        <a
+                          href={slides[index + 1].live}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <AiFillEye className="project-icon" />
+                        </a>
                         <p>{slides[index + 1]?.description}</p>
                         <div className="technologies">
-                          {slides[index + 1]?.technologies?.map((technology, index) => {
-                            return <div key={index} className="technology">{technology}</div>;
-                          })}
+                          {slides[index + 1]?.technologies?.map(
+                            (technology, index) => {
+                              return (
+                                <div key={index} className="technology">
+                                  {technology}
+                                </div>
+                              );
+                            }
+                          )}
                         </div>
                       </div>
                     )}
-
                   </div>
-                )
-                }
+                )}
               </div>
             );
           })}
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 
