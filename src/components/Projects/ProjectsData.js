@@ -5,8 +5,18 @@ import RealEstate from "../../assets/RealEstate.png";
 import Aquashot from "../../assets/Aquashot.png";
 import Crypto from "../../assets/Crypto.png";
 import Ecommerce from "../../assets/Ecommerce.png";
+import Eats from "../../assets/cseats.png";
 
 export const ProjectsData = [
+  {
+    image: Eats,
+    title: "CoderSingh Eats",
+    github: "https://github.com/TheCoderSingh/codersingh-eats",
+    live: "https://codersingh-eats.vercel.app/",
+    description:
+      "A complete platform for your restaurant business with features like menu, bookings, and online ordering",
+    technologies: ["HTML", "SCSS", "ReactJS", "Chakra UI", "Next.js"],
+  },
   {
     image: Aura,
     title: "Aura",
