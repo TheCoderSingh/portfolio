@@ -27,8 +27,19 @@ const Home = () => {
           <img src={Jas} alt="Jaskaran" />
         </div>
       </div>
-      <div className="contact-btn">
-        <a href="#contact">Get in touch</a>
+      <div className="main-btns">
+        <div className="contact-btn">
+          <a
+            href="https://drive.google.com/file/d/10aYW7LgLUKZ9gMHFTHKg3g7mWT6zz1Cl/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            My Resume
+          </a>
+        </div>
+        <div className="contact-btn">
+          <a href="#contact">Get in touch</a>
+        </div>
       </div>
     </div>
   );
