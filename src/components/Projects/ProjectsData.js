@@ -6,8 +6,25 @@ import Aquashot from "../../assets/Aquashot.png";
 import Crypto from "../../assets/Crypto.png";
 import Ecommerce from "../../assets/Ecommerce.png";
 import Eats from "../../assets/cseats.png";
+import Chat from "../../assets/chat.png";
 
 export const ProjectsData = [
+  {
+    image: Chat,
+    title: "Chat App",
+    github: "https://github.com/TheCoderSingh/chat-app",
+    live: "https://chat-app-p021.onrender.com/",
+    description:
+      "A MERN chat application with authenticaiton system, online status and notification sound",
+    technologies: [
+      "ReactJS",
+      "DaisyUI",
+      "Vite",
+      "Socket.io",
+      "Node.js",
+      "MongoDB",
+    ],
+  },
   {
     image: Eats,
     title: "CoderSingh Eats",
