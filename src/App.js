@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Header />
       <Home />
-      <Projects slides={ProjectsData} />
+      <Projects data={ProjectsData} />
       <Skills />
       <Publications publications={PublicationsData} />
       <Contact />

@@ -129,6 +129,73 @@
       }
     }
   }
+
+  .projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    .project {
+      width: calc(
+        33.33% - 120px
+      ); /* Make sure there's enough space for the project card to breathe */
+      // border: 1px solid #eee;
+      margin: 2px;
+      padding: 40px 10px 0px 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+
+      img {
+        width: 80%;
+        height: 45%;
+      }
+
+      h2 {
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 0.8em;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+          background-color: $primary;
+          padding: 5px;
+          margin: 2px;
+          color: #fff;
+          font-size: 0.7em;
+          border-radius: 3px;
+        }
+      }
+
+      .links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        a {
+          text-decoration: none;
+          color: $dark;
+          padding: 5px 10px;
+          border: 1px solid $dark;
+          font-size: 0.8em;
+
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1425px) {
